@@ -13,7 +13,9 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Catelog App"),
+        title: Text(
+          "Catelog App",
+        ),
       ),
       body: Container(),
       bottomNavigationBar: BottomNavigationBar(
