@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_application_2/Widget/themes.dart';
 import 'package:flutter_application_2/pages/login_page.dart';
 import 'package:flutter_application_2/utills/routes.dart';
+// ignore: unused_import
 import 'package:google_fonts/google_fonts.dart';
 import 'pages/home_page.dart';
 

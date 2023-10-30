@@ -13,35 +13,36 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(
+        title: const Text(
           "Catelog App",
+          style: TextStyle(color: Colors.white),
         ),
       ),
       body: Container(),
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: currentIndex,
         onTap: (index) => setState(() => currentIndex = index),
-        items: <BottomNavigationBarItem>[
+        items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
               icon: Icon(Icons.home_rounded),
               label: 'Home',
-              backgroundColor: Colors.blueGrey),
+              backgroundColor: Color(0xFF17203A)),
           BottomNavigationBarItem(
               icon: Icon(Icons.category_rounded),
               label: 'Categories',
-              backgroundColor: Colors.blueGrey),
+              backgroundColor: Color(0xFF17203A)),
           BottomNavigationBarItem(
               icon: Icon(Icons.notifications_rounded),
               label: 'Notification',
-              backgroundColor: Colors.blueGrey),
+              backgroundColor: Color(0xFF17203A)),
           BottomNavigationBarItem(
               icon: Icon(Icons.person_3_rounded),
               label: 'Account',
-              backgroundColor: Colors.blueGrey),
+              backgroundColor: Color(0xFF17203A)),
           BottomNavigationBarItem(
               icon: Icon(Icons.shopping_cart_rounded),
               label: 'Cart',
-              backgroundColor: Colors.blueGrey),
+              backgroundColor: Color(0xFF17203A)),
         ],
       ),
       drawer: MyDrawer(

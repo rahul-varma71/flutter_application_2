@@ -6,7 +6,7 @@ class MyTheme {
       primarySwatch: Colors.blueGrey,
       primaryTextTheme: GoogleFonts.latoTextTheme(),
       appBarTheme: AppBarTheme(
-          color: Colors.white,
+          color: Color(0xFF17203A),
           elevation: 0.0,
           iconTheme: IconThemeData(color: Colors.black),
           toolbarTextStyle: Theme.of(context).textTheme.bodyText2,
