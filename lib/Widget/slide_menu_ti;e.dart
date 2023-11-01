@@ -1,5 +1,6 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:rive/rive.dart';
+
 
 class SlideMenu extends StatelessWidget {
   const SlideMenu({
@@ -24,19 +25,20 @@ class SlideMenu extends StatelessWidget {
               leading: SizedBox(
                 height: 34,
                 width: 34,
-                child: RiveAnimation.asset(
-                  "assets/images/test_icon.riv",
-                  artboard: "HOME",
-                  // onInit: (artboard) {
-                  //  its animated part
+                // child: RiveAnimation.asset(
+                //   "assets/images/test_icon.riv",
+                //   artboard: "HOME",
+                //   // onInit: (artboard) {
+                //   //  its animated part
+                //   // },
+                // ),
+                child: Icon(
+                  CupertinoIcons.home,
+                  color: Colors.white,
+                  //   artboard:"HOME",
+                  //   onInit:(artboard){
                   // },
                 ),
-                // child: Icon(CupertinoIcons.home,
-                //   color: Colors.white,
-                //   artboard:"HOME",
-                //   onInit:(artboard){
-                // },
-                // ),
               ),
               title: Text(
                 "Home",

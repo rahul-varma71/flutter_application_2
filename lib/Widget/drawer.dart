@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:rive/rive.dart';
+
 
 import 'infocard.dart';
 import 'slide_menu_ti;e.dart';
@@ -8,9 +8,10 @@ import 'slide_menu_ti;e.dart';
 class MyDrawer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    final imageUrl =
-        "https://cmsv2-assets.apptegy.net/uploads/2242/file/2131943/fb5a25a4-2153-4677-a1c5-a1677a80897c.png";
+    // final imageUrl =
+    //     "https://cmsv2-assets.apptegy.net/uploads/2242/file/2131943/fb5a25a4-2153-4677-a1c5-a1677a80897c.png";
     return Drawer(
+      
       child: Container(
         padding: const EdgeInsets.fromLTRB(2, 15, 0, 0),
         color: const Color(0xFF17203A),

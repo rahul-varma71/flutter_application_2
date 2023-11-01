@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_2/Widget/themes.dart';
 import 'package:flutter_application_2/pages/login_page.dart';
+
 import 'package:flutter_application_2/utills/routes.dart';
-// ignore: unused_import
-import 'package:google_fonts/google_fonts.dart';
+
 import 'pages/home_page.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -20,11 +20,14 @@ class MyApp extends StatelessWidget {
       theme: MyTheme.lightTheme(context),
       darkTheme: MyTheme.darkTheme(context),
       debugShowCheckedModeBanner: false,
-      initialRoute: MyRoutes.homeRoute,
+      // initialRoute: MyRoutes.LoginPage(),
+      initialRoute: "/",
       routes: {
         "/": (context) => LoginPage(),
+        MyRoutes.loginRoute: (context) => LoginPage(),
         MyRoutes.homeRoute: (context) => HomePage(),
-        "/login": (context) => LoginPage()
+        // "/login": (context) => LoginPage(),
+        // "/home": (context) => HomePage(),
       },
     );
   }
