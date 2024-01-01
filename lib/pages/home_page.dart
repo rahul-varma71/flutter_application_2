@@ -1,5 +1,8 @@
+// ignore_for_file: unnecessary_null_comparison, unused_local_variable
+
 import 'package:flutter/material.dart';
-import 'package:flutter_application_2/Widget/drawer.dart';
+import 'package:velocity_x/velocity_x.dart';
+
 import 'package:flutter_application_2/models/cateloge.dart';
 
 class HomePage extends StatefulWidget {
@@ -18,74 +21,70 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
-      appBar: AppBar(
-        iconTheme: const IconThemeData(color: Colors.white),
-        title: const Text(
-          "Catelog App",
-          style: TextStyle(color: Colors.white),
+      body: SafeArea(
+        child: Container(
+          padding: Vx.m32,
+          // header
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              const CatelogHeader(),
+              if (CatelogModel.items != null && CatelogModel.items.isNotEmpty)
+                const CatelogList()
+              else
+                const Center(child: CircularProgressIndicator())
+            ],
+          ),
         ),
       ),
-      body: Padding(
-          padding: const EdgeInsets.all(16.0),
-          child: (CatelogModel.items != null && CatelogModel.items.isNotEmpty)
-              ? GridView.builder(
-                  gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                      crossAxisCount: 2),
-                  itemBuilder: (context, index) {
-                    final Item = CatelogModel.items[index];
-                    return Card(
-                        shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(4.0)),
-                        child: GridTile(child: Image.network(Item.image)));
-                  },
-                  itemCount: CatelogModel.items.length,
-                )
-              : const Center(
-                  child: CircularProgressIndicator(),
-                )),
-
-
-                // bottom navigator bar
-      bottomNavigationBar: BottomNavigationBar(
-        currentIndex: currentIndex,
-        onTap: (index) => setState(() => currentIndex = index),
-        items: const <BottomNavigationBarItem>[
-          BottomNavigationBarItem(
-              icon: Icon(Icons.home_rounded),
-              label: 'Home',
-              backgroundColor: Color(0xFF17203A)),
-          BottomNavigationBarItem(
-              icon: Icon(Icons.category_rounded),
-              label: 'Categories',
-              backgroundColor: Color(0xFF17203A)),
-          BottomNavigationBarItem(
-              icon: Icon(Icons.notifications_rounded),
-              label: 'Notification',
-              backgroundColor: Color(0xFF17203A)),
-          BottomNavigationBarItem(
-              icon: Icon(Icons.person_3_rounded),
-              label: 'Account',
-              backgroundColor: Color(0xFF17203A)),
-          BottomNavigationBarItem(
-              icon: Icon(Icons.shopping_cart_rounded),
-              label: 'Cart',
-              backgroundColor: Color(0xFF17203A)),
-        ],
-      ),
-      drawer: MyDrawer(
-          // child: Padding(
-          //   padding: EdgeInsets.all(15),
-          //   child: Text(
-          //     " My Category",
-          //     textAlign: TextAlign.center,
-          //     style: TextStyle(
-          //       fontSize: 20,
-          //       fontWeight: FontWeight.bold,
-          //     ),
-          //   ),
-          // ),
-          ),
     );
+  }
+}
+
+class CatelogHeader extends StatelessWidget {
+  const CatelogHeader({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return const Column(
+      children: [
+        Text(
+          "Apple Store",
+          style: TextStyle(fontSize: 22, fontFamily: 'CrimsonText-Regular'),
+        )
+      ],
+    );
+  }
+}
+
+class CatelogList extends StatelessWidget {
+  const CatelogList({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return ListView.builder(
+      itemCount: CatelogModel.items.length,
+      itemBuilder: (context, index) {
+        final catelog = CatelogModel.items[index];
+        // ignore: prefer_typing_uninitialized_variables
+        var catalog;
+        return Catelogitem(catelog: catalog);
+      },
+    );
+  }
+}
+
+class Catelogitem extends StatelessWidget {
+  final Item catelog;
+
+  const Catelogitem({
+    Key? key,
+    required this.catelog,
+  })  : assert(catelog != null),
+        super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return VxBox().white.square(100).make();
   }
 }
