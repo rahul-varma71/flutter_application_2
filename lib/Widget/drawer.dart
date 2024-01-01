@@ -6,6 +6,8 @@ import 'infocard.dart';
 import 'slide_menu_ti;e.dart';
 
 class MyDrawer extends StatelessWidget {
+  const MyDrawer({super.key});
+
   @override
   Widget build(BuildContext context) {
     // final imageUrl =
@@ -158,7 +160,7 @@ class MyDrawer extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.only(left: 24, top: 32, bottom: 16),
                 child: Text(
-                  "Browser".toUpperCase(),
+                  "About Us".toUpperCase(),
                   style: Theme.of(context)
                       .textTheme
                       .titleMedium!

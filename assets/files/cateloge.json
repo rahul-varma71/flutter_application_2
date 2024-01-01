@@ -1,0 +1,88 @@
+{
+    "products":[
+        {
+            "id" : 1,
+            "name" : "Iphonr 11 pro max",
+            "desc" : "Apple iphone 11th genaration",
+            "price" : "₹1,29,999",
+            "color" : "#33505a",
+            "image" : "https://rukminim2.flixcart.com/image/416/416/k2jbyq80pkrrdj/mobile-refurbished/e/b/u/iphone-11-pro-max-64-a-mwhg2hn-a-apple-0-original-imafkg2fg3evmhuy.jpeg?q=70"
+        },
+        {
+            "id" : 2,
+            "name" : "Iphonr 12 pro max",
+            "desc" : "Apple iphone 12th genaration",
+            "price" : "₹1,30,000",
+            "color" : "#00ac51",
+            "image" : "https://rukminim2.flixcart.com/image/416/416/kg8avm80/mobile/g/z/c/apple-iphone-12-pro-max-dummyapplefsn-original-imafwgcyyemh9hbg.jpeg?q=70"
+
+        },
+        {
+            "id" : 3,
+            "name" : "Iphonr 13 pro max",
+            "desc" : "Apple iphone 13th genaration",
+            "price" : "₹1,29,999",
+            "color" : "#e0bfae",
+            "image" : "https://rukminim2.flixcart.com/image/416/416/ktketu80/mobile/r/m/8/iphone-13-pro-max-mllj3hn-a-apple-original-imag6vpgphrzuffg.jpeg?q=70"
+
+        },
+        {
+            "id" : 4,
+            "name" : "Iphonr 14 pro max",
+            "desc" : "Apple iphone 14th genaration",
+            "price" : "₹1,29,999",
+            "color" : "#544ee4",
+            "image" : "https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/6/x/j/-original-imaghxejqvpwfqh2.jpeg?q=70"
+
+        },
+        {
+            "id" : 5,
+            "name" : "Iphonr 15 pro max",
+            "desc" : "Apple iphone 15th genaration",
+            "price" : "₹1,29,999",
+            "color" : "#f73984",
+            "image" : "https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/a/r/5/-original-imagtc3kcmph6ax5.jpeg?q=70"
+        },
+        
+        {
+            "id": 6,
+            "name": "APPLE iPhone 14 (Blue, 128 GB)",
+            "desc": "Apple iphone 14th genaration",
+            "price": "₹55,999",
+            "color": "#e3e4e9",
+            "image": "https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/3/5/l/-original-imaghx9qmgqsk9s4.jpeg?q=70"
+        },
+        {
+            "id": 7,
+            "name": "APPLE iPhone 15 (Black, 128 GB)",
+            "desc": "Apple iphone 15th genaration",
+            "price": "₹77,900",
+            "color": "#f73984",
+            "image": "https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/h/d/9/-original-imagtc2qzgnnuhxh.jpeg?q=70"
+        },
+        {
+            "id": 8,
+            "name": "APPLE iPhone 13 (White, 128 GB)",
+            "desc": "Apple iphone 13th genaration",
+            "price": "₹57,900",
+            "color": "#f73984",
+            "image": "https://rukminim2.flixcart.com/image/416/416/ktketu80/mobile/6/n/d/iphone-13-mlpg3hn-a-apple-original-imag6vpyghayhhrh.jpeg?q=70"
+        },
+        {
+            "id": 9,
+            "name": "APPLE iPhone 12 (Blue, 128 GB)",
+            "desc": "Apple iphone 12th genaration",
+            "price": "₹63,999",
+            "color": "#f73984",
+            "image": "https://rukminim2.flixcart.com/image/416/416/kg8avm80/mobile/y/7/n/apple-iphone-12-dummyapplefsn-original-imafwg8dpyjvgg3j.jpeg?q=70"
+        },
+        {
+            "id": 10,
+            "name": "APPLE iPhone 11 (Red, 64 GB)",
+            "desc": "Apple iphone 11th genaration",
+            "price": "₹63,999",
+            "color": "#f73984",
+            "image": "https://rukminim2.flixcart.com/image/416/416/k2jbyq80pkrrdj/mobile-refurbished/q/z/g/iphone-11-128-a-mwm32hn-a-apple-0-original-imafkg25hjmuy98e.jpeg?q=70"
+        }
+    ]
+}

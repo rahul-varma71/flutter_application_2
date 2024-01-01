@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_2/Widget/themes.dart';
 import 'package:flutter_application_2/pages/login_page.dart';
-
 import 'package:flutter_application_2/utills/routes.dart';
-
 import 'pages/home_page.dart';
 
 void main() {
@@ -11,7 +9,7 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -23,8 +21,8 @@ class MyApp extends StatelessWidget {
       // initialRoute: MyRoutes.LoginPage(),
       initialRoute: "/",
       routes: {
-        "/": (context) => LoginPage(),
-        MyRoutes.loginRoute: (context) => LoginPage(),
+        "/": (context) => const LoginPage(),
+        MyRoutes.loginRoute: (context) => const LoginPage(),
         MyRoutes.homeRoute: (context) => HomePage(),
         // "/login": (context) => LoginPage(),
         // "/home": (context) => HomePage(),
